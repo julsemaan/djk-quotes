@@ -13,7 +13,7 @@ while IFS= read -r line; do
 done < $t
 
 t3=$(mktemp)
-sed '$ d' $t2 > $t3
+sed '$ d' $t2 > djk
 
-strfile -c % $t3 quotes.dat
+strfile -c % djk djk.dat
 
